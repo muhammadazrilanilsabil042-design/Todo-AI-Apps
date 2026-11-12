@@ -1,0 +1,21 @@
+{
+  "name": "Todo App AI",
+  "short_name": "TodoAI",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#080c14",
+  "theme_color": "#5220db",
+  "description": "Aplikasi manajemen tugas produktif dengan fitur Kebun Virtual dan AI.",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/1055/1055672.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/1055/1055672.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
