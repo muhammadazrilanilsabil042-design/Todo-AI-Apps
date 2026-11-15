@@ -1,4 +1,4 @@
-module.default = async function handler(req,res) {
+module.exports = async function handler(req,res) {
     // 1. Tolak jika bukan request POST
     if (req.method !== "POST") {
         return res.status(405).json({ error: "Method Not Allowed" });
