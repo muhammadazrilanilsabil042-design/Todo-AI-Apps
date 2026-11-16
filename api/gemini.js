@@ -23,8 +23,8 @@ module.exports = async function handler(req,res) {
         const data = await response.json();
 
         // 5. Kembalikan jawaban dari AI ke script.js
-        return res.status(200).json(data);
-        
+        return res.status(response.status).json(data);
+    
     } catch (error) {
         console.error(error);
         return res.status(500).json({ error: "Gagal terhubung ke AI" });
