@@ -16,7 +16,7 @@ module.exports = async function handler(req,res) {
             method: "POST",
             headers: { 
                 "Content-Type": "application/json" 
-            },7u595i4iii zril il sbil 
+            },
             body: JSON.stringify(body) 
         });
 
