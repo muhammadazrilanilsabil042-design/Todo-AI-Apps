@@ -4,7 +4,7 @@ module.exports = async function handler(req,res) {
         return res.status(405).json({ error: "Method Not Allowed" });
     }
 
-    // 2. Ambil API Key yang sudah kamu simpan di dashboard Netlify
+    // 2. Ambil API Key yang sudah kamu simpan di dashboard vercel
     const API_KEY = process.env.GEMINI_API_KEY;
 
     try {
@@ -12,7 +12,7 @@ module.exports = async function handler(req,res) {
         const body = (req.body);
 
         // 4. Proses tembak API ke Google Gemini (aman di belakang server)
-        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`, {
+        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent?key=${API_KEY}`,{
             method: "POST",
             headers: { 
                 "Content-Type": "application/json" 
