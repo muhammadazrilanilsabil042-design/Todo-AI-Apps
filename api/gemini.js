@@ -12,11 +12,11 @@ module.exports = async function handler(req,res) {
         const body = (req.body);
 
         // 4. Proses tembak API ke Google Gemini (aman di belakang server)
-        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`, {
+        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${API_KEY}`, {
             method: "POST",
             headers: { 
                 "Content-Type": "application/json" 
-            },
+            },7u595i4iii zril il sbil 
             body: JSON.stringify(body) 
         });
 
