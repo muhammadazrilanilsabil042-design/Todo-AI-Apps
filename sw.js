@@ -1,4 +1,4 @@
-const CACHE_NAME = 'todo-app-v3'; // Diubah ke v2 agar HP otomatis mereset cache lama
+const CACHE_NAME = 'todo-app-v5'; // Diubah ke v2 agar HP otomatis mereset cache lama
 const urlsToCache = [
   './',
   './index.html',
